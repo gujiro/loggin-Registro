@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta 	charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>	Registro</title>
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+<!-- JavaScript -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<!-- Responsive meta tag -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<style>
+			div {margin: 4px
+			}
+	</style>
+
+	<script>
+			$('#myTab a').on('click', function (e) {
+		e.preventDefault()
+		$(this).tab('show')
+})
+	</script>
+</head>
+<body>
+	<div class="container"> <!-- Navigation -->
+	  <div class="row align-items-start">
+	    <div class="col">
+				<ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist" >
+				  <li class="nav-item">
+				    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Login</a>
+				  </li>
+				  <li class="nav-item">
+				    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Registro</a>
+				  </li>
+		 		</ul>
+	   	</div>
+      </div>
+  </div>
+
+
+<div class="tab-content">
+<div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
+
+  <div class="row mt-5">
+				<div class="col text-right font-weight-bold ">Correo</div>
+		<div class="col">
+			<div class="input-group-prepend">
+			<input type="text" id ="Correo" class="form-control">
+			<span class="input-group-text" id="basic-addon1">@example.com</span>
+		</div>
+		</div>
+		<div class="w-100"></div>
+		<div class="col text-right font-weight-bold">Clave</div>
+		<div class="col text-center">
+			<input type="text" id= "clave" class="form-control">
+    </div>
+		<div class="w-100"></div>
+		<div class="col text-center">
+			<button type="button" class="btn btn-secondary btn-lg" onclick="subtotal();">Entrar</button>
+		 </div>
+	 </div>
+</div>
+ <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+	<div class="row mt-5">
+		<div class="col text-right font-weight-bold ">Nombre</div>
+		<div class="col">
+			<input type="text" id ="Nombre" class="form-control">
+		</div>
+		<div class="w-100"></div>
+			<div class="col text-right font-weight-bold">Telefono</div>
+		<div class="col text-center">
+			<input type="number" id= "telefono" class="form-control">
+  	</div>
+		<div class="w-100"></div>
+		<div class="col text-right font-weight-bold ">Correo</div>
+		<div class="col">
+			<div class="input-group-prepend">
+			<input type="text" id ="Correo" class="form-control">
+			<span class="input-group-text" id="basic-addon1">@example.com</span>
+		</div>
+		</div>
+		<div class="w-100"></div>
+			<div class="col text-right font-weight-bold">Clave</div>
+						<div class="col text-center">
+				<input type="text" id= "clave1" class="form-control">
+	    </div>
+		<div class="w-100"></div>
+			<div class="col text-right font-weight-bold">Repetir Clave</div>
+			<div class="col text-center">
+				<input type="text" id= "clave2" class="form-control">
+      </div>
+		<div class="w-100"></div>
+			<div class="col text-center">
+				<button type="button" class="btn btn-secondary btn-lg" onclick="subtotal();">Entrar</button>
+	 		</div>
+  	</div>
+	</div>
+</div>
+
+
+
+</body>
+</html>
